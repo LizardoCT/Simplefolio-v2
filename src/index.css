@@ -7,7 +7,6 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  /* background-color: #242424; */
   background-color: #212224;
 
   font-synthesis: none;
@@ -50,4 +49,12 @@
 /* /////////// */
 .return:hover.arrow {
   transform: translateX(2%);
+}
+
+@media (max-width: 360px) {
+  input {
+    width: 150px;
+    max-width: 130px;
+    min-width: 130px;
+  }
 }

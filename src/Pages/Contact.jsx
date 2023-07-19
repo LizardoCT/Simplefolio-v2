@@ -6,7 +6,7 @@ import { Fade } from 'react-awesome-reveal'
 
 const Contact = () => {
   return (
-    <section className="h-full mb-14">
+    <div className="h-full mb-14 max-sm:w-full">
       <div>
         <Fade direction="up" triggerOnce={true}>
           <Link to="/" className="flex items-center text-[15px] font-medium py-2 return">
@@ -30,13 +30,13 @@ const Contact = () => {
         <label className='max-sm:flex"'>
           <input
             required
-            className="rounded-md p-3 pr-12 mr-3 border border-transparent focus:outline-none  max-sm:w-[140px]"
+            className="rounded-md p-3 pr-12 mr-3 border border-transparent focus:outline-none  max-sm:max-w-[165px]"
             type="text"
             placeholder="Name"
           />
           <input
             required
-            className="rounded-md p-3 pr-12 border border-transparent focus:outline-none max-sm:w-[140px]"
+            className="rounded-md p-3 pr-12 border border-transparent focus:outline-none max-sm:max-w-[165px]"
             type="email"
             placeholder="Email"
           />
@@ -73,7 +73,7 @@ const Contact = () => {
           </a>
         </span>
       </p>
-    </section>
+    </div>
   )
 }
 
