@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  line-height: 1.5;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #242424; */
+  background-color: #212224;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* arrow hover effect on cards */
+.card-icon {
+  transform: translateX(-2%);
+  transition: all .3s ease-in-out;
+}
+
+.card:hover .card-icon {
+  opacity: 1;
+  transform: translateX(2%);
+}
+
+/* dot flicker animation */
+.pulse {
+  width: 9px;
+  height: 9px;
+  background-color: rgb(86, 252, 71);
+  border-radius: 50%;
+  animation: pulsed .5s infinite alternate;
+}
+
+@keyframes pulsed {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* /////////// */
+.return:hover.arrow {
+  transform: translateX(2%);
+}
