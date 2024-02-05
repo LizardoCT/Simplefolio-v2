@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +11,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #212224;
-
+  /* background-color: #ffffff; */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -44,6 +47,25 @@
   100% {
     opacity: 0;
   }
+}
+
+.paper {
+  -webkit-filter: drop-shadow(5px 5px 5px #a8a8a8);
+  filter: drop-shadow(0px 5px 10px #ffffff49);
+}
+
+.not-found {
+  font-family: "Delius Unicase", cursive;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+}
+
+.not-found-text {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  color: #fff;
+  font-weight: 500;
 }
 
 /* /////////// */
