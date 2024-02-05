@@ -2,6 +2,7 @@
 import avatar from '../assets/avatar.png'
 import Icons from './Icons'
 import { Fade } from 'react-awesome-reveal'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -11,7 +12,9 @@ const Hero = () => {
           <div className="flex items-center max-sm:ml-4">
             <Fade direction="up" triggerOnce={true}>
               <div className="pulse mr-3"></div>
-              <p className="font-medium">Available for hire.</p>
+              <Link to="/NotFound" className="font-medium cursor-text">
+                Available for hire.
+              </Link>
             </Fade>
           </div>
 
